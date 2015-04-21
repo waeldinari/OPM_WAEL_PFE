@@ -1,0 +1,3 @@
+opmopm_homepage:
+    path:     /
+    defaults: { _controller: OPMOPMBundle:Default:index }

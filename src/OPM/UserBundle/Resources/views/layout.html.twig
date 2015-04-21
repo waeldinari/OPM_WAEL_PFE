@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Authentification</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="{{ asset ('bundles/opmopm/css/bootstrap.min.css')}}"  rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="{{ asset ('bundles/opmopm/css/styles.css')}}"  rel="stylesheet">
+              {#  <script type="text/javascript">
+
+{#function open_infos()
+{
+window.open('pageb.html','nom_de_ma_popup','menubar=no, scrollbars=no, top=100, left=100, width=300, height=200');
+} #}
+         
+	</head> <!-- style="background:#333;" -->
+	<body>
+         
+<!--login modal-->
+<div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+    
+     {% block fos_user_content %}
+      {% endblock fos_user_content %}
+  
+</div>
+
+	<!-- script references -->
+		<script src="{{ asset ('bundles/opmopm///ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')}}" ></script>
+		<script src="{{ asset ('bundles/opmopm/js/bootstrap.min.js')}}" ></script>
+                <script src="{{ asset ('bundles/opmopm/js/bootbox.min.js')}}" ></script>
+	</body>
+</html>
+
+

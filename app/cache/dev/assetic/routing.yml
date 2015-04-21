@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: 'C:\Program Files (x86)\EasyPHP-DevServer-13.1VC9\data\localweb\OPM_WAEL_DINARI_PFE\app/config/routing_dev.yml'

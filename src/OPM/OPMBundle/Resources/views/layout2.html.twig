@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OXIA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ asset ('bundles/opmopm/css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ asset ('bundles/opmopm/css/sb-admin.css')}}" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="{{ asset ('bundles/opmopm/css/plugins/morris.css')}}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{{ asset ('bundles/opmopm/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{{ asset ('bundles/opmopm/https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')}}" >
+<link rel="stylesheet" href="{{ asset ('bundles/opmopm/https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css')}}" >
+<script src="{{ asset ('bundles/opmopm/https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')}}" ></script>
+<script src="{{ asset ('bundles/opmopm/https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')}}" ></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+.item{
+    background: #333;    
+    text-align: center;
+    height: 300px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+.bs-example{
+	margin: 20px;
+}
+</style>
+<script>$(document).ready(function(){
+     $("#myCarousel").carousel();
+});
+</script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                
+                <a  href="{{path('opmopm_homepage')}}" class="navbar-brand" href="index.html">OXIA-Group</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Utilisateur</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Utilisateur</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Utilisateur <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                             <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a><i class="fa fa-fw fa-user"></i> {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}
+               
+            {% else %}
+               
+            {% endif %}
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                        <a href="{{ path('fos_user_security_logout') }}"><i class="fa fa-fw fa-power-off"></i>  {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}</a>
+                        </li>
+                         <div>
+                               <div id="nav">
+                 <div class="login border-box">
+                                       
+                              {% for type, messages in app.session.flashBag.all %}
+            {% for message in messages %}
+                <div class="{{ type }}">
+                    {{ message|trans({}, 'FOSUserBundle') }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+            {% block fos_user_content %}
+            {% endblock fos_user_content %}
+           
+        </div>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+
+                     <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="glyphicon glyphicon-th-list"></i> Gestion Perdiems <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#demo">Paramétrage</a>
+                           
+                            </li>
+                            <li>
+                                <a href="#">Status</a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="nav nav-pills nav-stacked">
+  <li>
+                                <a href="{{path('opm_perdiems_Banque')}}" data-toggle="collapse" data-target="#demo"><i class="glyphicon glyphicon-usd"></i> Banque</a>
+                            </li>
+                            <li>    
+                                <a href="{{path('opm_perdiems_fraisTimbre')}}" data-toggle="collapse" data-target="#demo"><i class="glyphicon glyphicon-gbp"></i> Frais et Timbres</a>
+                            </li> 
+                            <li>
+                                <a href="{{path('opm_perdiems_homepage')}}" data-toggle="collapse" data-target="#demo"><i class="glyphicon glyphicon-gbp"></i> Montant</a>
+                            </li>
+</ul>
+                    </li>
+                     <li>
+                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Perdiems</a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Synthèse perdiems</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-elements.html"><i class="glyphicon glyphicon-plane"></i> Pays destination</a>  
+                    </li>
+                  <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="glyphicon glyphicon-time"></i> Gestion Imputation <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>     
+                                <a href="javascript:;" data-toggle="collapse" data-target="#demo">Imputation incomplète</a>
+                           
+                            </li>
+                            <li>
+                                <a href="#">Planification manquant</a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="nav nav-pills nav-stacked">
+  <li>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="glyphicon glyphicon-th-list"></i> Gestion Taches</a>
+                            </li> 
+                            <li>
+                                <a href="#"><i class="glyphicon glyphicon-calendar"></i> Imputation temps</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="glyphicon glyphicon-wrench"></i> Temps planifier</a>
+                            </li>
+</ul>
+                    </li>
+                   
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+{% block content%} {%endblock%}
+          
+
+
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="{{ asset ('bundles/opmopm/js/jquery.js')}}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ asset ('bundles/opmopm/js/bootstrap.min.js')}}"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="{{ asset ('bundles/opmopm/js/plugins/morris/raphael.min.js')}}"></script>
+    <script src="{{ asset ('bundles/opmopm/js/plugins/morris/morris.min.js')}}"></script>
+    <script src="{{ asset ('bundles/opmopm/js/plugins/morris/morris-data.js')}}"></script>
+
+</body>
+
+</html>

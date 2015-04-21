@@ -1,0 +1,13 @@
+
+opm_perdiems_homepage:
+    path:     /Perdiems
+    defaults: { _controller: OPMPerdiemsBundle:Perdiems:index }
+    
+
+opm_perdiems_fraisTimbre:
+    path:     /FraisTimbres
+    defaults: { _controller: OPMPerdiemsBundle:Perdiems:FraisTimbres }
+    
+opm_perdiems_Banque:
+    path:     /Banque
+    defaults: { _controller: OPMPerdiemsBundle:Banque:index }

@@ -1,0 +1,4 @@
+services:
+#    opm_perdiems.example:
+#        class: OPM\PerdiemsBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

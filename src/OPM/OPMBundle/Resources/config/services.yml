@@ -1,0 +1,4 @@
+services:
+#    opmopm.example:
+#        class: OPM\OPMBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
